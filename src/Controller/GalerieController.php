@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Resquest;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Entity\Image;
 use Doctrine\Persistence\ManagerRegistry;
@@ -15,7 +15,7 @@ class GalerieController extends AbstractController
     {
         return $this->render('base.html.twig');
     }
-    public function index2(Resquest $request, $nom): Response
+    public function index2(Request $request, $nom): Response
     {
         dd($request);
         return $this->render('hello2.html.twig',array('lenom'=>$nom));
