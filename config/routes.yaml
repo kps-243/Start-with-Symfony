@@ -1,0 +1,23 @@
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+app_lucky_number:
+    path: /index
+    controller: App\Controller\GalerieController::index
+
+hello2:
+    path: /hello2/{nom}
+    controller: App\Controller\GalerieController::index2
+
+galerie:
+    path: /Galerie/{page}
+    controller: App\Controller\GalerieController::img
+    defaults:
+        page: 1
+    requirements:
+        page: '\d*'
+
+ajout:
+    path: /galerie/add
+    controller: App\Controller\GalerieController::add
+
