@@ -45,6 +45,4 @@ class GalerieController extends AbstractController
 		$em->flush();
         return  $this->render('ajout.html.twig', array('image'=>$image));
     }
-    
- 
 }
