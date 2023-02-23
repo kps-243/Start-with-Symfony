@@ -21,3 +21,6 @@ ajout:
     path: /galerie/add
     controller: App\Controller\GalerieController::add
 
+app_session:
+    path: /session
+    controller: App\Controller\SessionController::index
